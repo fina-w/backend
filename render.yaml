@@ -3,7 +3,7 @@ services:
     name: waxpsy-backend
     env: node
     buildCommand: npm install
-    startCommand: npx json-server --watch db.json
+    startCommand: node node_modules/json-server/lib/cli/bin.js --watch db.json
     envVars:
       - key: NODE_VERSION
         value: 18.x
