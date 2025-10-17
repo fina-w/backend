@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: waxpsy-backend
-    env: node
-    buildCommand: npm install
-    startCommand: node node_modules/json-server/lib/cli/bin.js --watch db.json
-    envVars:
-      - key: NODE_VERSION
-        value: 18.x
