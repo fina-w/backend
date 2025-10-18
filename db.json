@@ -1028,146 +1028,510 @@
       "createdAt": "2025-11-11T11:20:00Z"
     }
   ],
-  "quiz": [
+  "quizzes": [
     {
-      "id": "1",
-      "titre": "Quiz : Démystifier le TDAH",
-      "troubleId": 1,
+      "id": 1,
+      "theme": "Comment allez-vous vraiment ?",
+      "description": "Ce quiz général aide à faire le point sur votre bien-être émotionnel. Il ne remplace pas un avis médical.",
       "questions": [
         {
           "id": 1,
-          "question": "Le TDAH ne touche que les enfants.",
-          "options": ["Vrai", "Faux"],
-          "reponseCorrecte": "Faux",
-          "explication": "Le TDAH peut persister à l'âge adulte et est souvent sous-diagnostiqué chez les adultes, en particulier les femmes."
+          "text": "Vous sentez-vous souvent fatigué(e) ou sans énergie ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
         },
         {
           "id": 2,
-          "question": "Quel est l'un des symptômes principaux du TDAH ?",
-          "options": ["Tristesse constante", "Inattention", "Délires"],
-          "reponseCorrecte": "Inattention",
-          "explication": "L'inattention, l'hyperactivité et l'impulsivité sont les trois symptômes cardinaux du TDAH."
+          "text": "Avez-vous du mal à dormir ou à trouver la motivation de faire vos activités quotidiennes ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
         },
         {
           "id": 3,
-          "question": "Le TDAH est causé par une mauvaise éducation.",
-          "options": ["Vrai", "Faux"],
-          "reponseCorrecte": "Faux",
-          "explication": "Le TDAH est un trouble neurodéveloppemental d'origine génétique et neurologique, pas un problème d'éducation."
+          "text": "Vous arrive-t-il de vous sentir triste, nerveux(se) ou irritable sans raison claire ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 4,
+          "text": "Avez-vous du mal à vous concentrer ou à rester positif(ve) ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
         }
-      ]
+      ],
+      "interpretation": {
+        "0-3": "Votre bien-être global semble bon.",
+        "4-7": "Vous traversez peut-être une période de fatigue ou de stress léger.",
+        "8-12": "Vous semblez fragilisé(e). Prenez du temps pour vous et n’hésitez pas à parler à un proche ou à un professionnel."
+      }
     },
     {
-      "id": "2",
-      "titre": "Quiz : Connaissez-vous la dépression ?",
-      "troubleId": 3,
+      "id": 2,
+      "theme": "Comprendre ce que je ressens",
+      "description": "Ce quiz aide à identifier les émotions dominantes et à orienter vers le trouble le plus probable.",
       "questions": [
         {
           "id": 1,
-          "question": "La dépression est juste une phase de tristesse passagère.",
-          "options": ["Vrai", "Faux"],
-          "reponseCorrecte": "Faux",
-          "explication": "La dépression est une maladie sérieuse qui nécessite souvent un traitement professionnel."
+          "text": "Vous sentez-vous souvent inquiet(e) sans raison particulière ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
         },
         {
           "id": 2,
-          "question": "Quelle est la durée minimale des symptômes pour diagnostiquer une dépression ?",
-          "options": ["1 semaine", "2 semaines", "1 mois"],
-          "reponseCorrecte": "2 semaines",
-          "explication": "Les symptômes doivent persister au moins 2 semaines pour un diagnostic de dépression."
+          "text": "Vous arrive-t-il de perdre l’envie de faire les choses que vous aimiez ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
         },
         {
           "id": 3,
-          "question": "La dépression peut avoir des causes biologiques.",
-          "options": ["Vrai", "Faux"],
-          "reponseCorrecte": "Vrai",
-          "explication": "Un déséquilibre chimique dans le cerveau peut contribuer à la dépression."
+          "text": "Avez-vous souvent du mal à gérer votre colère ou vos émotions ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 4,
+          "text": "Vous arrive-t-il de vous sentir seul(e), incompris(e) ou isolé(e) ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
         }
-      ]
+      ],
+      "interpretation": {
+        "0-3": "Vous semblez émotionnellement stable.",
+        "4-7": "Vos émotions varient, cela peut être passager.",
+        "8-12": "Vos réponses indiquent une gêne importante. Consultez la rubrique des troubles pour identifier ce qui pourrait vous correspondre."
+      }
     },
     {
-      "id": "3",
-      "titre": "Quiz : Les troubles anxieux",
-      "troubleId": 4,
+      "id": 3,
+      "theme": "Anxiété généralisée",
+      "description": "Ce quiz explore les signes d’anxiété quotidienne et leur intensité.",
       "questions": [
         {
           "id": 1,
-          "question": "L'anxiété est toujours pathologique.",
-          "options": ["Vrai", "Faux"],
-          "reponseCorrecte": "Faux",
-          "explication": "L'anxiété normale est adaptative. Elle devient pathologique quand elle est excessive et handicapante."
+          "text": "Vous inquiétez-vous souvent même sans raison claire ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
         },
         {
           "id": 2,
-          "question": "Quel traitement est efficace pour les troubles anxieux ?",
-          "options": ["TCC", "Homéopathie seule", "Aucun traitement"],
-          "reponseCorrecte": "TCC",
-          "explication": "La thérapie cognitivo-comportementale est un traitement validé scientifiquement pour l'anxiété."
+          "text": "Avez-vous des symptômes physiques (palpitations, tremblements, sueurs) lors de moments de stress ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
         },
         {
           "id": 3,
-          "question": "Les attaques de panique peuvent donner l'impression de faire une crise cardiaque.",
-          "options": ["Vrai", "Faux"],
-          "reponseCorrecte": "Vrai",
-          "explication": "Les symptômes physiques d'une attaque de panique peuvent ressembler à ceux d'une crise cardiaque."
+          "text": "Avez-vous du mal à contrôler vos pensées anxieuses ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 4,
+          "text": "Évitez-vous certaines situations par peur ou inquiétude ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
         }
-      ]
+      ],
+      "interpretation": {
+        "0-3": "Votre anxiété semble faible.",
+        "4-7": "Vous ressentez un certain niveau d’anxiété. Essayez des techniques de relaxation.",
+        "8-12": "Votre anxiété semble élevée. En parler à un professionnel pourrait vous aider à la gérer."
+      }
     },
     {
-      "id": "4",
-      "titre": "Quiz : Comprendre l'autisme",
-      "troubleId": 6,
+      "id": 4,
+      "theme": "Dépression",
+      "description": "Ce quiz évalue certains signes de dépression légère ou modérée.",
       "questions": [
         {
           "id": 1,
-          "question": "L'autisme est causé par les vaccins.",
-          "options": ["Vrai", "Faux"],
-          "reponseCorrecte": "Faux",
-          "explication": "Aucune étude scientifique n'a établi de lien entre les vaccins et l'autisme. Cette théorie a été totalement discréditée."
+          "text": "Vous sentez-vous souvent triste, sans énergie ou découragé(e) ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
         },
         {
           "id": 2,
-          "question": "Toutes les personnes autistes ont les mêmes difficultés.",
-          "options": ["Vrai", "Faux"],
-          "reponseCorrecte": "Faux",
-          "explication": "L'autisme est un spectre avec une grande diversité de profils et de capacités."
+          "text": "Avez-vous perdu l’intérêt pour des choses qui vous plaisaient ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
         },
         {
           "id": 3,
-          "question": "Une intervention précoce peut améliorer le développement des enfants autistes.",
-          "options": ["Vrai", "Faux"],
-          "reponseCorrecte": "Vrai",
-          "explication": "Les interventions précoces et adaptées améliorent significativement le développement et l'autonomie."
+          "text": "Avez-vous du mal à vous lever ou à commencer la journée ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 4,
+          "text": "Vous sentez-vous inutile ou coupable sans raison ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
         }
-      ]
+      ],
+      "interpretation": {
+        "0-3": "Aucun signe particulier de dépression.",
+        "4-7": "Vous traversez peut-être une période difficile.",
+        "8-12": "Votre niveau de découragement semble élevé. Parlez-en à quelqu’un de confiance."
+      }
     },
     {
-      "id": "5",
-      "titre": "Quiz : Les addictions",
-      "troubleId": 10,
+      "id": 5,
+      "theme": "Stress et burn-out",
+      "description": "Ce test aide à évaluer votre niveau de stress et de fatigue mentale.",
       "questions": [
         {
           "id": 1,
-          "question": "L'addiction est un manque de volonté.",
-          "options": ["Vrai", "Faux"],
-          "reponseCorrecte": "Faux",
-          "explication": "L'addiction est une maladie chronique du cerveau, pas un problème de caractère."
+          "text": "Vous sentez-vous souvent sous pression ou débordé(e) ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
         },
         {
           "id": 2,
-          "question": "On peut être dépendant à un comportement (jeux, écrans).",
-          "options": ["Vrai", "Faux"],
-          "reponseCorrecte": "Vrai",
-          "explication": "Les addictions comportementales activent les mêmes circuits cérébraux que les addictions aux substances."
+          "text": "Même après du repos, vous vous sentez toujours fatigué(e) ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
         },
         {
           "id": 3,
-          "question": "La rechute fait partie du processus de guérison.",
-          "options": ["Vrai", "Faux"],
-          "reponseCorrecte": "Vrai",
-          "explication": "La rechute est fréquente et ne signifie pas l'échec. Elle fait souvent partie du parcours de rétablissement."
+          "text": "Vous manquez de motivation pour vos tâches habituelles ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 4,
+          "text": "Vous êtes irritable ou impatient sans raison ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
         }
-      ]
+      ],
+      "interpretation": {
+        "0-3": "Votre stress semble gérable.",
+        "4-7": "Vous commencez à accumuler du stress, attention au surmenage.",
+        "8-12": "Votre stress semble élevé, ce qui peut mener à un burn-out."
+      }
+    },
+    {
+      "id": 6,
+      "theme": "Troubles du sommeil",
+      "description": "Ce quiz sensibilise aux signes d’un sommeil perturbé.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Avez-vous du mal à vous endormir ou à rester endormi(e) ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 2,
+          "text": "Vous réveillez-vous souvent fatigué(e) malgré une nuit complète ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 3,
+          "text": "Vos pensées vous empêchent-elles de dormir ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 4,
+          "text": "Avez-vous besoin d’écrans ou d’une distraction pour vous endormir ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        }
+      ],
+      "interpretation": {
+        "0-3": "Votre sommeil semble équilibré.",
+        "4-7": "Votre sommeil est parfois perturbé.",
+        "8-12": "Vous présentez un trouble du sommeil notable. Consultez un professionnel si cela persiste."
+      }
+    },
+    {
+      "id": 7,
+      "theme": "Trouble panique et crises d’angoisse",
+      "description": "Ce quiz explore les symptômes liés aux crises d’angoisse.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Avez-vous déjà ressenti une peur soudaine accompagnée de palpitations ou tremblements ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 2,
+          "text": "Avez-vous peur de faire une crise dans un lieu public ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 3,
+          "text": "Avez-vous l’impression de perdre le contrôle lors de fortes peurs ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 4,
+          "text": "Ces sensations vous poussent-elles à éviter certaines situations ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        }
+      ],
+      "interpretation": {
+        "0-3": "Aucun signe de trouble panique.",
+        "4-7": "Des épisodes d’anxiété ponctuels existent.",
+        "8-12": "Vos réponses suggèrent des signes de crises d’angoisse. En parler pourrait vous aider."
+      }
+    },
+    {
+      "id": 8,
+      "theme": "Trouble obsessionnel-compulsif (TOC)",
+      "description": "Ce quiz aide à repérer les comportements répétitifs ou les pensées envahissantes.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Avez-vous des pensées qui reviennent sans cesse malgré vos efforts ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 2,
+          "text": "Effectuez-vous certains gestes répétitifs pour vous rassurer (vérifier, ranger, nettoyer...) ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 3,
+          "text": "Ces gestes prennent-ils beaucoup de temps ou d’énergie ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 4,
+          "text": "Ces pensées ou gestes vous stressent-ils quand vous ne pouvez pas les faire ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        }
+      ],
+      "interpretation": {
+        "0-3": "Aucun signe significatif de TOC.",
+        "4-7": "Quelques comportements répétitifs, sans gravité.",
+        "8-12": "Des pensées ou rituels envahissants sont présents. Un professionnel peut aider à les gérer."
+      }
+    },
+    {
+      "id": 9,
+      "theme": "Troubles alimentaires",
+      "description": "Ce quiz explore la relation à l’alimentation et à l’image corporelle.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Vous préoccupez-vous souvent de votre poids ou de votre apparence ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 2,
+          "text": "Évitez-vous certains repas ou aliments pour contrôler votre poids ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 3,
+          "text": "Avez-vous déjà mangé beaucoup en peu de temps, puis ressenti de la culpabilité ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 4,
+          "text": "Vos pensées autour de la nourriture occupent-elles beaucoup de place ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        }
+      ],
+      "interpretation": {
+        "0-3": "Votre rapport à l’alimentation semble sain.",
+        "4-7": "Quelques préoccupations alimentaires à surveiller.",
+        "8-12": "Des signes de trouble alimentaire apparaissent. Consultez un professionnel si cela vous pèse."
+      }
+    },
+    {
+      "id": 10,
+      "theme": "Trouble bipolaire",
+      "description": "Ce quiz sensibilise aux changements d’humeur marqués et fréquents.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Vos émotions passent-elles parfois de l’euphorie à la tristesse très rapidement ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 2,
+          "text": "Avez-vous parfois beaucoup d’énergie, besoin de peu de sommeil, puis ensuite de fortes baisses de moral ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 3,
+          "text": "Vos proches remarquent-ils des changements d’humeur marqués chez vous ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 4,
+          "text": "Ces variations affectent-elles votre vie quotidienne ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        }
+      ],
+      "interpretation": {
+        "0-3": "Vos émotions semblent stables.",
+        "4-7": "Des variations émotionnelles existent mais restent modérées.",
+        "8-12": "Vos humeurs changent fortement. Une aide spécialisée pourrait vous éclairer."
+      }
+    },
+    {
+      "id": 11,
+      "theme": "Trouble de la concentration (TDAH)",
+      "description": "Ce test explore la difficulté à se concentrer ou à rester organisé(e).",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Avez-vous du mal à rester concentré(e) sur une tâche ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 2,
+          "text": "Vous arrive-t-il d’oublier des choses importantes ou de vous disperser facilement ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 3,
+          "text": "Vous sentez-vous souvent agité(e) ou impatient(e) ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 4,
+          "text": "Avez-vous du mal à terminer ce que vous commencez ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        }
+      ],
+      "interpretation": {
+        "0-3": "Votre concentration semble bonne.",
+        "4-7": "Vous avez parfois du mal à vous concentrer.",
+        "8-12": "Ces signes évoquent des difficultés d’attention importantes."
+      }
+    },
+    {
+      "id": 12,
+      "theme": "Trouble borderline (instabilité émotionnelle)",
+      "description": "Ce quiz aide à repérer une forte instabilité émotionnelle et relationnelle.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Vos émotions changent-elles rapidement (colère, tristesse, joie intense) ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 2,
+          "text": "Craignez-vous souvent d’être abandonné(e) ou rejeté(e) ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 3,
+          "text": "Vos relations sont-elles parfois intenses et conflictuelles ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 4,
+          "text": "Avez-vous parfois des comportements impulsifs que vous regrettez ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        }
+      ],
+      "interpretation": {
+        "0-3": "Vos émotions semblent stables.",
+        "4-7": "Vos émotions sont parfois intenses.",
+        "8-12": "Une forte instabilité émotionnelle est perceptible. Chercher un soutien pourrait vous apaiser."
+      }
+    },
+    {
+      "id": 13,
+      "theme": "Addictions et dépendances",
+      "description": "Ce test sensibilise aux comportements de dépendance (écrans, alcool, jeux, substances...).",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Vous avez du mal à réduire votre utilisation ou votre consommation habituelle ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 2,
+          "text": "Vous ressentez un manque ou une nervosité quand vous n’y avez pas accès ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 3,
+          "text": "Votre entourage s’inquiète-t-il de vos habitudes ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 4,
+          "text": "Cette activité ou consommation affecte-t-elle votre vie quotidienne ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        }
+      ],
+      "interpretation": {
+        "0-3": "Aucun signe de dépendance.",
+        "4-7": "Des habitudes à surveiller.",
+        "8-12": "Des signes de dépendance sont présents. Parlez-en pour trouver de l’aide."
+      }
+    },
+    {
+      "id": 14,
+      "theme": "Phobie sociale et isolement",
+      "description": "Ce quiz explore la peur du regard des autres et la tendance à s’isoler.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Avez-vous peur de parler ou d’agir devant les autres ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 2,
+          "text": "Évitez-vous les événements sociaux à cause du stress ou du jugement ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 3,
+          "text": "Vous sentez-vous souvent seul(e) ou rejeté(e) ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        },
+        {
+          "id": 4,
+          "text": "Ces situations vous causent-elles une grande détresse ?",
+          "options": ["Jamais", "Parfois", "Souvent", "Très souvent"],
+          "scores": [0, 1, 2, 3]
+        }
+      ],
+      "interpretation": {
+        "0-3": "Votre aisance sociale semble bonne.",
+        "4-7": "Certaines situations vous mettent mal à l’aise.",
+        "8-12": "Vous semblez éviter le contact social. Des solutions existent pour retrouver confiance."
+      }
     }
   ],
   "glossaire": [
@@ -1562,130 +1926,6 @@
       "duree": "10:20",
       "troubleId": 10,
       "description": "Documentaire sur le processus de guérison de l'addiction."
-    }
-  ],
-  "newsletters": [
-    {
-      "id": "1",
-      "email": "awa.gueye@email.com",
-      "dateInscription": "2025-09-15T10:00:00Z",
-      "actif": true
-    },
-    {
-      "id": "2",
-      "email": "demba.fall@email.com",
-      "dateInscription": "2025-09-20T14:30:00Z",
-      "actif": true
-    },
-    {
-      "id": "3",
-      "email": "mariama.seck@email.com",
-      "dateInscription": "2025-10-01T09:15:00Z",
-      "actif": true
-    },
-    {
-      "id": "4",
-      "email": "ousmane.diop@email.com",
-      "dateInscription": "2025-10-05T16:45:00Z",
-      "actif": false
-    },
-    {
-      "id": "5",
-      "email": "fatou.thiam@email.com",
-      "dateInscription": "2025-10-10T11:20:00Z",
-      "actif": true
-    }
-  ],
-  "partenaires": [
-    {
-      "id": "1",
-      "nom": "Ministère de la Santé et de l'Action Sociale",
-      "type": "Institution publique",
-      "logo": "public/partners/msas.png",
-      "lien": "https://sante.gouv.sn"
-    },
-    {
-      "id": "2",
-      "nom": "OMS Sénégal",
-      "type": "Organisation internationale",
-      "logo": "public/partners/oms.png",
-      "lien": "https://who.int"
-    },
-    {
-      "id": "3",
-      "nom": "Université Cheikh Anta Diop",
-      "type": "Institution académique",
-      "logo": "public/partners/ucad.png",
-      "lien": "https://ucad.sn"
-    },
-    {
-      "id": "4",
-      "nom": "Croix Rouge Sénégal",
-      "type": "ONG",
-      "logo": "public/partners/croixrouge.png",
-      "lien": "https://croixrouge.sn"
-    },
-    {
-      "id": "5",
-      "nom": "Association Sénégalaise de Psychiatrie",
-      "type": "Association professionnelle",
-      "logo": "public/partners/asp.png",
-      "lien": "#"
-    }
-  ],
-  "notifications": [
-    {
-      "id": "1",
-      "utilisateurId": 1,
-      "type": "rendez-vous",
-      "titre": "Rappel de rendez-vous",
-      "message": "Votre rendez-vous avec Dr. Khadija Diallo est prévu demain à 10h.",
-      "lu": false,
-      "dateCreation": "2025-11-09T09:00:00Z"
-    },
-    {
-      "id": "2",
-      "utilisateurId": 2,
-      "type": "commentaire",
-      "titre": "Nouveau commentaire",
-      "message": "Quelqu'un a répondu à votre commentaire sur l'article TDAH.",
-      "lu": true,
-      "dateCreation": "2025-11-08T14:30:00Z"
-    },
-    {
-      "id": "3",
-      "utilisateurId": 3,
-      "type": "article",
-      "titre": "Nouvel article publié",
-      "message": "Un nouvel article sur l'anxiété sociale vient d'être publié.",
-      "lu": false,
-      "dateCreation": "2025-11-10T10:00:00Z"
-    }
-  ],
-  "donations": [
-    {
-      "id": "1",
-      "montant": 50000,
-      "devise": "FCFA",
-      "donateur": "Anonyme",
-      "date": "2025-10-15T12:00:00Z",
-      "message": "Pour soutenir votre belle initiative"
-    },
-    {
-      "id": "2",
-      "montant": 100000,
-      "devise": "FCFA",
-      "donateur": "Entreprise ABC",
-      "date": "2025-10-20T15:30:00Z",
-      "message": "Don d'entreprise pour la santé mentale"
-    },
-    {
-      "id": "3",
-      "montant": 25000,
-      "devise": "FCFA",
-      "donateur": "Awa G.",
-      "date": "2025-10-25T09:15:00Z",
-      "message": "Continuez ce travail important"
     }
   ],
   "blogs": [
