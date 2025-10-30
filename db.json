@@ -670,6 +670,18 @@
         "validation"
       ],
       "dateCreation": "2025-08-01T00:00:00Z"
+    },
+    {
+      "id": "3",
+      "nom": "safi",
+      "email": "safi@gmail.sn",
+      "motDePasse": "motdepasse123",
+      "role": "moderateur",
+      "permissions": [
+        "moderation",
+        "validation"
+      ],
+      "dateCreation": "2025-08-01T00:00:00Z"
     }
   ],
   "favoris": [
